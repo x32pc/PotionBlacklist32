@@ -3,6 +3,7 @@ package com.x32pc.github;
 import com.x32pc.github.commands.BaseCommand;
 import com.x32pc.github.commands.PotionBlacklistCommand;
 import com.x32pc.github.commands.PotionUnblacklistCommand;
+import com.x32pc.github.commands.TabFinish;
 import com.x32pc.github.event.CheckDrinkEvent;
 import com.x32pc.github.event.CheckLingeringEvent;
 import com.x32pc.github.event.CheckSplashEvent;
@@ -56,5 +57,6 @@ public final class PotionBlacklist32 extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new CheckDrinkEvent(this), this);
         getServer().getPluginManager().registerEvents(new CheckLingeringEvent(this), this);
         getServer().getPluginManager().registerEvents(new CheckSplashEvent(this), this);
+        getCommand("potion").setTabCompleter(new TabFinish());
     }
 }
