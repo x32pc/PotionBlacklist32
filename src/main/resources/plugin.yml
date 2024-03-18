@@ -1,0 +1,4 @@
+name: Potionlacklist32
+version: '${project.version}'
+main: com.x32pc.github.Potionlacklist32
+api-version: '1.19'
