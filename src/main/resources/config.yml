@@ -1,0 +1,13 @@
+messages:
+  help:
+    - "&8&m---------------------------"
+    - "&f /potion - Shows this messages."
+    - "&f /potion blacklist <player> - Blacklist player from potion use."
+    - "&f /potion unblacklist <player> - Unblacklist playe from potion use."
+    - "&8&m---------------------------"
+  potion:
+    on-blacklist: "&c%player_name% is already on blacklist!"
+    is-blacklisted-screen: "&cYou have been blacklisted from drinking potions."
+    added: "&fPlayer %player_name% &fhas been added to blacklist."
+    removed: "&fPlayer %player_name% &fhas been removed from blacklist."
+    not-blacklisted: "&fPlayer isn't blacklisted."
